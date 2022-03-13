@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 13</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+
+    <!-- Google Font Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container border">
+
+        <div id="resultPublish" class="mark_notification border">
+            <form class="form-control text-center border-0">
+                <input type="number" max="100" class="mx-2" placeholder="Bangla">
+                <input type="number" max="100" class="mx-2" placeholder="English">
+                <input type="number" max="100" class="mx-2" placeholder="Math">
+                <input type="number" max="100" class="mx-2" placeholder="Science">
+                <input type="number" max="100" class="mx-2" placeholder="Religion">
+                <br>
+                <input type="submit" value="SHOW RESULT" class="my-4">
+            </form>
+            <div class="result">
+
+            </div>
+        </div>
+        <div id="task-ListContainer" class="to-do mx-auto text-center border">
+            <h4>Task List</h4>
+            <form id="task_form">
+                <input type="text" id="taskInput" placeholder="New Task">
+                <input type="submit" value="Add Task">
+            </form>
+            <ul id="tasks">
+
+            </ul>
+        </div>
+        <div id="counterContainer" class="counter text-center border">
+            <div class="form-group mb-4 mx-auto">
+                <input onfocus="this.value = ''" type="text" class="text-center" name="" style="width: 280px;"
+                    placeholder="Enter Seconds" id="">
+            </div>
+            <button class="start btn btn-primary px-4 mx-4">Start </button>
+            <button class="stop btn btn-success px-4">Stop</button>
+            <div class="timer display-6 my-3" style="font-weight: 600">0</div>
+            <div style="width: 400px;" class="progress_ mx-auto">
+                <div class="progress__bar">
+
+                </div>
+            </div>
+        </div>
+        <div id="clockContainer" class="border">
+            <div class="clock">
+                <p class="time">
+                    <span class="time__hour"></span>
+                    <span class="time__minute"> <span class="sec"></span></span>
+                </p>
+                <p>
+                    <span class="day"></span>
+                    <span class="date"></span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="buttons m-5 mx-auto text-center border">
+        <a href="#clockContainer" class="btn mx-2 btn-outline-primary">Digital Clock</a>
+        <a href="#counterContainer" class="btn mx-2 btn-outline-danger">Counter with Loader</a>
+        <a href="#task-ListContainer" class="btn mx-2 btn-outline-dark">To-Do App</a>
+        <a href="#resultPublish" class="btn mx-2 btn-outline-success">Marks Notification</a>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html> 
